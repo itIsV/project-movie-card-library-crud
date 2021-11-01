@@ -3,25 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.0",
     "acorn": "7.1.1",
     "minimist": "1.2.3",
     "mutationobserver-shim": "0.3.7",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "4.0.3",
     "serialize-javascript": "3.1.0"
   },
   "scripts": {
-    "start": "clear && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --verbose=true",
+    "start": "clear && craco start",
+    "build": "craco build",
+    "test": "craco test --verbose=true",
     "eject": "react-scripts eject",
-    "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "lint:styles": "npx stylelint '**/*.css'"
   },
   "browserslist": {
     "production": [
@@ -37,13 +34,13 @@
   },
   "devDependencies": {
     "@testing-library/react": "11.2.2",
+    "autoprefixer": "^9.8.8",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.1",
-    "eslint": "6.8.0",
-    "eslint-config-trybe-frontend": "1.2.0",
-    "eslint-plugin-babel": "^5.3.1",
+    "postcss": "^7.0.39",
     "stylelint": "13.8.0",
     "stylelint-config-standard": "20.0.0",
-    "stylelint-order": "4.1.0"
+    "stylelint-order": "4.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
