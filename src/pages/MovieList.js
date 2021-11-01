@@ -32,7 +32,9 @@ class MovieList extends Component {
           <Link
           className="text-yellow-special flex-col w-1/3 px-8 rounded-t-full border-t-2 border-red-fireEngine"
           to="/movies/new">
-          <img alt="film" src="images/tela-do-teatro-do-cinema.jpg"/>
+          <img
+          alt="add film" src="images/tela-do-teatro-do-cinema.jpg"
+          className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ..."/>
             ADICIONAR CARTÃO
             </Link>
           </div>
