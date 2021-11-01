@@ -8,6 +8,7 @@ class MovieCard extends Component {
 
     return (
       <div data-testid="movie-card">
+        <img alt="film" src={ movie.imagePath } />
         <h1>{movie.title}</h1>
         <p>{movie.storyline}</p>
         <Link to={ `movies/${movie.id}` }>VER DETALHES</Link>
