@@ -27,7 +27,7 @@ Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Updat
 ## Instruções para clonar o projeto:
 
 1. Clone o repositório
-  * `git clone `.
+  * `git clone git@github.com:itIsV/project-movie-card-library-crud.git`.
 
 2. Instale as dependências e inicialize o projeto
   * `npm install`
@@ -42,4 +42,4 @@ Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Updat
 ## Projeto em funcionamento:
 
 ### 📹 Video 📹
-https://mega.nz/file/sEcCDBZC#xCaZ7wVY9hcFk33rVDmpG1Y2OHs-D79AiOPrCUBu84I.mp4
+https://mega.nz/file/pZNgXJQD#pWqFFMXyt6owJtytOseBxDtCH_iYbxNq9DXEY_neec8
