@@ -33,7 +33,7 @@ Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Updat
   * `npm install`
 
 3. Inicie a aplicação
-  * * `npm start` (uma nova página deve abrir no seu navegador com aplicação)
+  * `npm start` (uma nova página deve abrir no seu navegador com aplicação)
 
 ---
 
