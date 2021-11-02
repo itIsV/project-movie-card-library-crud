@@ -50,7 +50,7 @@ class MovieDetails extends Component {
         <div className="text-4xl pt-12">
           <p className="pt-4">{ `Title: ${title}` }</p>
           <p className="pt-4">{ `Subtitle: ${subtitle}` }</p>
-          <p className="text-center px-96 pt-4">{ `Storyline: ${storyline}` }</p>
+          <p className="text-center px-72 pt-4">{ `Storyline: ${storyline}` }</p>
           <p className="pt-4">{ `Genre: ${genre}` }</p>
           <p className="p-4">{ `Rating: ${rating}` }</p>
           <Link

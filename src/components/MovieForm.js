@@ -24,15 +24,15 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_title">
+          Título
           <input
             placeholder="Insira o título"
             id="movie_title"
             type="text"
-            className="validate"
+            className="validate text-center px-4 bg-black-raisin rounded-md border-8 border-black-black"
             value={ title }
             onChange={ (event) => this.updateMovie('title', event.target.value) }
           />
-          Título
         </label>
       </div>
     );
@@ -44,14 +44,15 @@ class MovieForm extends React.Component {
     return (
       <div>
         <label htmlFor="movie_subtitle">
+          Subtítulo
           <input
+            className="text-center px-4 bg-black-raisin rounded-md border-8 border-black-black"
             placeholder="Insira o subtítulo"
             id="movie_subtitle"
             type="text"
             value={ subtitle }
             onChange={ (event) => this.updateMovie('subtitle', event.target.value) }
           />
-          Subtítulo
         </label>
       </div>
     );
@@ -61,16 +62,17 @@ class MovieForm extends React.Component {
     const { imagePath } = this.state;
 
     return (
-      <div className="row">
+      <div className="row border-8 border-black-black mb-1">
         <label htmlFor="movie_image">
+          Imagem
           <input
+            className="text-center px-4 bg-black-raisin rounded-md"
             placeholder="Insira o caminho da imagem"
             id="movie_image"
             type="text"
             value={ imagePath }
             onChange={ (event) => this.updateMovie('imagePath', event.target.value) }
           />
-          Imagem
         </label>
       </div>
     );
@@ -80,14 +82,15 @@ class MovieForm extends React.Component {
     const { storyline } = this.state;
 
     return (
-      <div>
+      <div className="border-8 border-black-black mb-1">
         <label htmlFor="movie_storyline">
+        Sinopse:
           <textarea
+            className="text-center px-4 bg-black-raisin rounded-md"
             id="movie_storyline"
             value={ storyline }
             onChange={ (event) => this.updateMovie('storyline', event.target.value) }
           />
-          Sinopse
         </label>
       </div>
     );
@@ -96,10 +99,11 @@ class MovieForm extends React.Component {
   renderGenreSelection() {
     const { genre } = this.state;
     return (
-      <div>
+      <div className="border-8 border-black-black mb-1">
         <label htmlFor="movie_genre">
-          Gênero
+          Gênero:
           <select
+            className="text-center px-4 bg-black-raisin rounded-md"
             id="movie_genre"
             value={ genre }
             onChange={ (event) => this.updateMovie('genre', event.target.value) }
@@ -117,9 +121,11 @@ class MovieForm extends React.Component {
   renderRatingInput() {
     const { rating } = this.state;
     return (
-      <div>
+      <div className="border-8 border-black-black mb-14">
         <label htmlFor="movie_rating">
+        Avaliação:
           <input
+            className="text-center px-0 bg-black-raisin rounded-lg"
             placeholder="Dê a avaliação do filme"
             id="movie_rating"
             type="number"
@@ -129,7 +135,6 @@ class MovieForm extends React.Component {
             value={ rating }
             onChange={ (event) => this.updateMovie('rating', event.target.value) }
           />
-          Avaliação
         </label>
       </div>
     );
@@ -137,7 +142,7 @@ class MovieForm extends React.Component {
 
   renderSubmitButton() {
     return (
-      <div>
+      <div className="border-8 border-black-black">
         <Link
           className="text-center px-4 bg-yellow-special rounded-2xl" to="/"
           >VOLTAR
@@ -155,7 +160,7 @@ class MovieForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text-gray-special2 text-center pt-12 text-4xl">
         <form>
           {this.renderTitleInput()}
           {this.renderSubtitleInput()}

@@ -18,7 +18,8 @@ module.exports = {
         fireEngine: '#C1292E'
       },
       black: {
-        black: '#020100'
+        black: '#020100',
+        raisin: '#252627'
       },
       white: {
         babyPowder: '#FDFFFC'
