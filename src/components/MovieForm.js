@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class MovieForm extends React.Component {
@@ -137,7 +138,12 @@ class MovieForm extends React.Component {
   renderSubmitButton() {
     return (
       <div>
+        <Link
+          className="text-center px-4 bg-yellow-special rounded-2xl" to="/"
+          >VOLTAR
+        </Link>
         <button
+          className="text-center px-4 bg-blue-special rounded-2xl" to="/"
           type="button"
           onClick={ this.handleSubmit }
         >
