@@ -37,16 +37,30 @@ class MovieDetails extends Component {
     const { movie, id } = this.state;
     const { title, storyline, imagePath, genre, rating, subtitle } = movie;
     const cardIsTrue = (
-      <div data-testid="movie-details">
-        <img alt="Movie Cover" src={ `../${imagePath}` } />
-        <p>{ `Title: ${title}` }</p>
-        <p>{ `Subtitle: ${subtitle}` }</p>
-        <p>{ `Storyline: ${storyline}` }</p>
-        <p>{ `Genre: ${genre}` }</p>
-        <p>{ `Rating: ${rating}` }</p>
-        <Link to="/">VOLTAR</Link>
-        <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
-        <Link onClick={ this.delete } to="/">DELETAR</Link>
+      <div data-testid="movie-details" 
+      className="text-white-babyPowder text-center pt-12">
+        <img alt="Movie Cover" src={ `../${imagePath}` } 
+        className="
+          block 
+          mx-auto
+          rounded-t-full
+          border-t-2
+        border-red-fireEngine"
+        />
+        <div className="text-4xl pt-12">
+          <p className="pt-4">{ `Title: ${title}` }</p>
+          <p className="pt-4">{ `Subtitle: ${subtitle}` }</p>
+          <p className="text-center px-96 pt-4">{ `Storyline: ${storyline}` }</p>
+          <p className="pt-4">{ `Genre: ${genre}` }</p>
+          <p className="p-4">{ `Rating: ${rating}` }</p>
+          <Link
+          className="text-center px-4 bg-yellow-special rounded-2xl" to="/"
+          >VOLTAR</Link>
+          <Link
+          className="text-center px-4 bg-blue-bdazzled rounded-2xl" to={ `/movies/${id}/edit` }>EDITAR</Link>
+          <Link
+          className="text-center px-4 bg-red-fireEngine rounded-2xl" onClick={ this.delete } to="/">DELETAR</Link>
+        </div>
       </div>
     );
 
