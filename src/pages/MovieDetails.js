@@ -36,10 +36,16 @@ class MovieDetails extends Component {
   render() {
     const { movie, id } = this.state;
     const { title, storyline, imagePath, genre, rating, subtitle } = movie;
+    let path = '';
+    if (imagePath) {
+    path = imagePath.startsWith('images')
+    ? `../${imagePath}`
+    : imagePath;
+    };
     const cardIsTrue = (
       <div data-testid="movie-details" 
       className="text-white-babyPowder text-center pt-12">
-        <img alt="Movie Cover" src={ `../${imagePath}` } 
+        <img alt="Movie Cover" src={ path } 
         className="
           block 
           mx-auto
