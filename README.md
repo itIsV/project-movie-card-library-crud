@@ -2,8 +2,7 @@
 Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Update and Delete_) com `React` e `React Router`, e estilizei com `Tailwind CSS`
 
 ---
-### 📹 Video 📹
-https://user-images.githubusercontent.com/73757018/116009049-c112d080-a5ed-11eb-9010-3a3925f7f8e0.mp4
+
 # Sumário
 
 - [Habilidades](#habilidades)
@@ -42,3 +41,5 @@ https://user-images.githubusercontent.com/73757018/116009049-c112d080-a5ed-11eb-
 
 ## Projeto em funcionamento:
 
+### 📹 Video 📹
+https://mega.nz/file/sEcCDBZC#xCaZ7wVY9hcFk33rVDmpG1Y2OHs-D79AiOPrCUBu84I.mp4
