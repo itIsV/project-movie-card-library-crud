@@ -7,11 +7,18 @@ class MovieCard extends Component {
     const { movie } = this.props;
 
     return (
-      <div data-testid="movie-card">
-        <img alt="film" src={ movie.imagePath } />
-        <h1>{movie.title}</h1>
-        <p>{movie.storyline}</p>
-        <Link to={ `movies/${movie.id}` }>VER DETALHES</Link>
+      <div data-testid="movie-card" className="flex-col w-1/3 px-8">
+        <Link className="text-yellow-special" to={ `movies/${movie.id}` }>
+          <img alt="film" src={ movie.imagePath }
+          className="
+          text-center rounded-t-full
+          border-t-2
+          border-red-fireEngine
+          transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ..."/>
+          <h1 className="text-white-babyPowder">{movie.title}</h1>
+          <p className="text-white-babyPowder">{movie.storyline}</p>
+          <h1>VER DETALHES</h1>
+        </Link>
       </div>
     );
   }

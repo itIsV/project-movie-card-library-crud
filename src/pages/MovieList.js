@@ -26,11 +26,19 @@ class MovieList extends Component {
   render() {
     const { movies } = this.state;
     const movieTrue = (
-      <div data-testid="movie-list">
-        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
-        <Link to="/movies/new">ADICIONAR CARTÃO</Link>
-      </div>);
-
+        <div data-testid="movie-list">
+          <div className="flex max-w-max flex-wrap flex-row pt-6">
+            {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+          <Link
+          className="text-yellow-special flex-col w-1/3 px-8 rounded-t-full border-t-2 border-red-fireEngine"
+          to="/movies/new">
+          <img
+          alt="add film" src="images/tela-do-teatro-do-cinema.jpg"
+          className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ..."/>
+            ADICIONAR CARTÃO
+            </Link>
+          </div>
+        </div>);
     return (
       <section>{(movies.length) ? movieTrue : <Loading />}</section>
     );
