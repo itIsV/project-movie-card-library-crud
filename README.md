@@ -42,4 +42,7 @@ Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Updat
 ## Projeto em funcionamento:
 
 ### 📹 Video 📹
-https://mega.nz/file/pZNgXJQD#pWqFFMXyt6owJtytOseBxDtCH_iYbxNq9DXEY_neec8
+
+https://user-images.githubusercontent.com/78622360/142230320-9fba3d07-ae55-4f9e-a1b9-10206fa67a8c.mp4
+
+
