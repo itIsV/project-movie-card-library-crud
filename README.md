@@ -1,5 +1,5 @@
 # Boas vindas ao repositório do projeto de Movie Cards CRUD!
-Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Update and Delete_) com `React` e `React Router`, e estilizei com `Tailwind CSS`
+Projeto realizado na escola Trybe, onde construí um `CRUD`(_Create, Read, Update e Delete_) com `React` e `React Router`, e estilizei com `Tailwind CSS`
 
 ---
 
